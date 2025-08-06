@@ -1,5 +1,7 @@
 import express from "express";
 import cors from "cors";
+import cookieParser from "cookie-parser";
+
 import systemInfoRoutes from "./routes/systemInfo.routes.js";
 const PORT = 5002;
 

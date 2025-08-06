@@ -5,6 +5,9 @@ const PORT = 5002;
 
 const app = express();
 app.use(cors());
+app.use(express.json());
+app.use(cookieParser());
+
 app.use("/api/admin", systemInfoRoutes);
 app.get("/", (req, res) => res.send("<h1>hi</h1>"));
 
